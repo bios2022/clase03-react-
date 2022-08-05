@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemList/ItemDetailContainer/ItemDetailContainer';
 import Counter from './components/Counter/Counter';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     <div className="App">
         <Navbar />
         <ItemListContainer bienvenida='Aca estan las mejores ofertas'/>
-        <Counter stock={10} onAdd={handleOnAdd} />
+        <ItemDetailContainer />
+        {/*<Counter stock={10} onAdd={handleOnAdd} />*/}
     </div>
   );
 }
